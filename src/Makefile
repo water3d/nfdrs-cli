@@ -12,7 +12,7 @@ OBS = RunNFDRS.o CNFDRSParams.o nfdrs2016.o utctime.o deadfuelmoisture.o NFDRSCo
 
 TARGET = NFDRScliV4
 $(TARGET): $(OBS)
-	$(CC) $(CFLAGS) $(OBS) /src/NFDRScliV4/config4cpp/lib/libconfig4cpp.a -static -O1 -o $@ -L/usr/local/lib -L/src/NFDRScliV4/config4cpp/lib -I/usr/local/include -I/src/NFDRScliV4/config4cpp/include/config4cpp
+	$(CC) $(CFLAGS) $(OBS) ./config4cpp/lib/libconfig4cpp.a -static -O1 -o $@ -L/usr/local/lib -L./config4cpp/lib -I/usr/local/include -I./config4cpp/include/config4cpp
 
 
 nfdrs2016.o: nfdrs2016.cpp nfdrs2016.h utctime.h
