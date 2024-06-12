@@ -4,12 +4,15 @@ Build modifications (Dockerless) by Nick Santos June 2024
 Version: 4.0 (23 Oct 2021)
 
 # Shell Script
+Run the following in the folder you wish to build the binary into:
 ```bash
 git clone https://github.com/water3d/nfdrs-cli
 cd nfdrs-cli
 chmod +x build.sh
-build.sh
+./build.sh
 ```
+
+Afterward, the executable NFDRScliV4 will be in the current directory
 
 # Docker
 Build it like this (may have to use 'sudo'):
