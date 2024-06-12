@@ -10,3 +10,4 @@ cd ..
 cp ../makefile_ns_updated ./Makefile
 make clean
 make
+mv ./NFDRScliV4 ../NFDRScliV4
